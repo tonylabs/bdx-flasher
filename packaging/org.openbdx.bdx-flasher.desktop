@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=BDX Flasher
+GenericName=Robot Main Board Flasher
+Comment=Flash OpenBDX firmware onto a Radxa ROCK 5B+ or Jetson Orin main board
+TryExec=/usr/bin/bdx-flasher
+Exec=/usr/bin/bdx-flasher
+Icon=org.openbdx.bdx-flasher
+Terminal=false
+Categories=System;Utility;Development;
+Keywords=OpenBDX;BDX;Radxa;ROCK;RK3588;Jetson;Orin;Flash;Firmware;SD;
+StartupNotify=true
+StartupWMClass=org.openbdx.bdx-flasher
+SingleMainWindow=true

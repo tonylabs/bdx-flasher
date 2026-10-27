@@ -1,0 +1,21 @@
+# Build output (./build.sh, ./package.sh)
+/dist/
+
+# Go test/coverage artefacts
+*.test
+*.out
+coverage.*
+
+# Firmware images, loaders and caches never belong in the repo
+*.img
+*.img.xz
+*.bin
+*.tar.gz
+*.sha256
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

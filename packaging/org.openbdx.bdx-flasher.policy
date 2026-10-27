@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>OpenBDX</vendor>
+  <vendor_url>https://openbdx.org</vendor_url>
+  <action id="org.openbdx.bdx-flasher.write">
+    <description>Write BDX firmware to a drive</description>
+    <message>Authentication is required to write BDX firmware to the selected drive</message>
+    <icon_name>org.openbdx.bdx-flasher</icon_name>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/bdx-flasher</annotate>
+  </action>
+</policyconfig>
